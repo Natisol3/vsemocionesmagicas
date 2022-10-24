@@ -1,0 +1,36 @@
+html {
+    font-size: 62,5%;}
+
+
+nav ul li{display: inline-block;
+    margin: 50px 80px;
+    text-align: center;
+    font-weight: bold;
+}   
+a{text-decoration: none;}
+.logovs{width: 200px;
+height: 200px;
+display:inline-block}
+
+h1{text-align: center;
+font-family:'Times New Roman', Times, serif;
+font-size: 40x;}
+h2{text-align: center;}
+h4{margin-top: 100px;
+margin-bottom: 5px;}
+
+.insta{height: 50px; width: 50px ; margin: 10px;}
+.face{height: 60px; width: 60px ; margin: 10px;}
+.whatsapp{height: 70px; width: 70px ; margin-top:30px;
+margin-bottom: 5px;}
+
+p1{text-align: justify;}
+
+table{text-align: center;}
+.titulocalendario{font-family: 'Times New Roman', Times, serif;
+font-size: 30px;}
+
+form label{display:block; text-align:start;
+font-weight: bold;}
+div2{display:block; margin-top:10px; margin-bottom: 20px;}
+.textoinicio{text-align: center;background-color: rgb(238, 162, 219);}
