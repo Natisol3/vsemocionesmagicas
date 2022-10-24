@@ -16,7 +16,7 @@ h1{text-align: center;
 font-family:'Times New Roman', Times, serif;
 font-size: 40x;}
 h2{text-align: center;}
-h4{margin-top: 100px;
+h3{margin-top: 100px;
 margin-bottom: 5px;}
 
 .insta{height: 50px; width: 50px ; margin: 10px;}
@@ -24,7 +24,8 @@ margin-bottom: 5px;}
 .whatsapp{height: 70px; width: 70px ; margin-top:30px;
 margin-bottom: 5px;}
 
-p1{text-align: justify;}
+.p1{text-align: justify;}
+.p2{text-align: center; font-weight: bold;}
 
 table{text-align: center;}
 .titulocalendario{font-family: 'Times New Roman', Times, serif;
