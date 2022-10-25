@@ -35,3 +35,100 @@ form label{display:block; text-align:start;
 font-weight: bold;}
 div2{display:block; margin-top:10px; margin-bottom: 20px;}
 .textoinicio{text-align: center;background-color: rgb(238, 162, 219);}
+
+.contenedor{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "aside aside"
+    "footer footer"
+}
+.headerindex{
+    display: grid;
+    justify-content: space-around;
+    align-items:initial;
+    grid-area: header;
+}
+.mainindex{
+    grid-area: main;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.asideindex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: aside;
+}
+
+.footerindex{
+    display: grid;
+    justify-content:left;
+    align-content:space-between;
+    grid-area: footer;
+}
+
+@media screen and (max-widht:768px) {
+    .contenedor{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer"
+    }
+    .headerindex{
+        display: grid;
+        justify-content: space-around;
+        align-items:initial;
+        grid-area: header;
+    }
+    .mainindex{
+        grid-area: main;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerindex{
+        display: grid;
+        justify-content:left;
+        align-content:space-between;
+        grid-area: footer;
+    }
+}
+
+@media screen and (max-widht:500px) {
+    .contenedor{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+.headerindex{
+    display: grid;
+    justify-content:space-between;
+    align-items:initial;
+    grid-area: header;
+}
+.mainindex{
+    grid-area: main;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.footerindex{
+    display: grid;
+    justify-content:left;
+    align-content:space-between;
+    grid-area: footer;
+}
+.logovs{
+    display: block;
+}
+}
