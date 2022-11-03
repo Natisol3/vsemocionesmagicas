@@ -14,11 +14,19 @@ display:inline-block}
 
 h1{text-align: center;
 font-family:'Times New Roman', Times, serif;
-font-size: 40x;}
+font-size: 40px;}
 h2{text-align: center;}
 h3{margin-top: 100px;
-margin-bottom: 5px;}
+margin-bottom: 5px;
+font-size: medium;}
 
+.contenedorfooter{display:inline-block}
+.contenedorimagenes{display: inline-block; justify-items:center;}
+.hanna{height: 300px; width: 300px; margin: 5px;}
+.lorenzo{height: 300px; width: 300px;margin: 5px;}
+.ranch{height: 300px; width: 300px;margin: 5px;}
+.justina{height: 300px; width: 300px;margin: 5px;}
+.piñata{height: 300px; width: 300px;margin: 5px;}
 .insta{height: 50px; width: 50px ; margin: 10px;}
 .face{height: 60px; width: 60px ; margin: 10px;}
 .whatsapp{height: 70px; width: 70px ; margin-top:30px;
@@ -48,7 +56,7 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
 }
 .headerindex{
     display: grid;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items:initial;
     grid-area: header;
 }
@@ -67,7 +75,7 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
 
 .footerindex{
     display: grid;
-    justify-content:left;
+    justify-items:start;
     align-content:space-between;
     grid-area: footer;
 }
@@ -83,8 +91,8 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
     }
     .headerindex{
         display: grid;
-        justify-content: space-around;
-        align-items:initial;
+        justify-content:start;
+        align-items:center;
         grid-area: header;
     }
     .mainindex{
@@ -95,7 +103,7 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
     }
     .footerindex{
         display: grid;
-        justify-content:left;
+        justify-items: start;
         align-content:space-between;
         grid-area: footer;
     }
@@ -112,8 +120,8 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
 }
 .headerindex{
     display: grid;
-    justify-content:space-between;
-    align-items:initial;
+    justify-content:start;
+    align-items:center;
     grid-area: header;
 }
 .mainindex{
@@ -129,6 +137,6 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
     grid-area: footer;
 }
 .logovs{
-    display: block;
+    display: block; margin-bottom: 5px;
 }
 }
