@@ -3,15 +3,19 @@ html {
 
 
 nav ul li{display:list-item;
-    margin: 15px 25px;
+    margin: 15px 15px;
     text-align:initial;
     font-weight: bold;
+    margin-block-start:0fr ;
+    background-color: antiquewhite;
 }   
 a{text-decoration: none;}
+
 .logovs{width: 200px;
 height: 200px;
 display:inline-block;
-margin-left: 5px;}
+justify-self:left;
+margin-left: 5px; margin-bottom: 10px;}
 
 h1{text-align: center;
 font-family:'Times New Roman', Times, serif;
@@ -28,6 +32,7 @@ font-size: medium;}
 .ranch{height: 300px; width: 300px;margin: 5px;}
 .justina{height: 300px; width: 300px;margin: 5px;}
 .piñata{height: 300px; width: 300px;margin: 5px;}
+.leon{height: 300px; width: 300px;margin: 5px;}
 .insta{height: 50px; width: 50px ; margin: 10px;}
 .face{height: 60px; width: 60px ; margin: 10px;}
 .whatsapp{height: 70px; width: 70px ; margin-top:30px;
@@ -46,20 +51,23 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
 .textoinicio{text-align: center;background-color: rgb(238, 162, 219);}
 
 .contenedor{
+    background-color:antiquewhite;
     display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:
     "header header"
     "main main"
     "aside aside"
     "footer footer"
 }
+
+
 .headerindex{
     display: grid;
     justify-content:space-around;
-    align-items: flex-start;
-    margin-left: 5px;
+    justify-items:left;
+    margin-left: 10px;
     grid-area: header;
 }
 .mainindex{
@@ -80,16 +88,18 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
     justify-items:start;
     align-content:space-between;
     grid-area: footer;
+    background-color: antiquewhite;
 }
 
 @media screen and (max-widht:768px) {
     .contenedor{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:
     "header header"
     "main main"
-    "footer footer"
+    "aside aside"
+    "footer footer";
     }
     .headerindex{
         display: grid;
@@ -103,6 +113,13 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
         justify-content: center;
         align-items: center;
     }
+
+    .asideindex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: aside;
+    }
     .footerindex{
         display: grid;
         justify-items: start;
@@ -111,13 +128,14 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
     }
 }
 
-@media screen and (max-widht:500px) {
+@media screen and (max-widht:425px) {
     .contenedor{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas:
     "header header"
     "main main"
+    "aside aside"
     "footer footer";
 }
 .headerindex{
@@ -131,6 +149,13 @@ div2{display:block; margin-top:10px; margin-bottom: 20px;}
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+.asideindex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: aside;
 }
 .footerindex{
     display: grid;
